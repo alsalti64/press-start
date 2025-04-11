@@ -1,4 +1,4 @@
-Purpose:
+<h1> Purpose:</h1>
 Press Start is a gaming history website that celebrates iconic consoles, games, and developers. It educates visitors about gaming's evolution through different eras.
 
 Website Structure:
