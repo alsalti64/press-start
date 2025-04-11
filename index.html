@@ -18,6 +18,12 @@
             padding: 100px;
             text-align: center;
         }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
         
         nav {
             background: #444;
@@ -31,13 +37,22 @@
             margin: 0 15px;
             font-weight: bold;
         }
-        
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+
+        .action-button {
+        text-align: center;
+        margin: 20px 0;
         }
         
+        button {
+        background: #444;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        }
+
         h2 {
             color: #333;
             text-align: center;
@@ -69,7 +84,15 @@
         <section>
             <h2>Step Into The World Of Gaming!</h2>
             <p>This website focuses on the different eras of gaming, additionally featuring visuals and descriptions of retro and modern video game consoles while comparing their differences. It also shows how gaming has influenced and made a significant cultural impact, highlighting examples of games and their developers, some of the biggest names that have shaped the industry.</p>
-        </section>
+            <h3>Feedback?</h3>
+            <p>Help us make our site better!</p>
+            <div class="action-button">
+              <button onclick="window.location.href='https://docs.google.com/forms/'">Click here!</button>
+            </div>
+          </section>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="images/SimpleLogo.png" alt="Press Start Logo" style="max-width: 300px;">
+          </div>
     </main>
 </body>
 </html>
