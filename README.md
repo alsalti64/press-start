@@ -22,7 +22,7 @@ The site is organized into the following main sections:
 - **Console Legacy:** History of gaming hardware evolution
 - **Timeless Games:** Showcase of iconic game titles
 - **Pixels on the Go:** History of handheld gaming
-- **RetroEvolve:** Timeline of gaming eras (1990s to present)
+- **Retro Evolve:** Timeline of gaming eras (1990s to present)
 - **Game Geniuses:** Profiles of famous developers
 - **About Us:** Project information
 - **Contact:** User feedback form
