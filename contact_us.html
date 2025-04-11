@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <title>Contact Us</title>
   <style>
     body {
@@ -17,6 +16,10 @@
     .section {
       padding: 60px;
       text-align: center;
+      background-color: rgba(248, 248, 248, 0.8);
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 10px;
     }
 
     h1 {
@@ -24,65 +27,149 @@
       margin-bottom: 20px;
     }
 
+    h2 {
+      font-size: 28px;
+      margin: 20px 0;
+    }
+
+    h3 {
+      color: #555;
+      font-size: 22px;
+    }
+
     .email {
       font-size: 18px;
-      margin-top: 10px;
+      margin: 10px 0;
     }
 
     .email a {
-      color: #000;
+      color: darkslategray;
       text-decoration: none;
     }
 
     .email a:hover {
+      color: blue;
       text-decoration: underline;
     }
-    h3 {
-            color: #555;
-        }
-        
-        .action-button {
-            text-align: center;
-            margin: 20px 0;
-        }
-        
-        button {
-            background: #444;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-        }
+    
+    .action-button {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    button {
+      background: #444;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
 
+    button:hover {
+      background: #555;
+    }
+
+    .form-group {
+      margin: 15px 0;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
     nav {
-        background: #444;
-        padding: 10px;
-        text-align: center;
+      background: #444;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
     }
     
     nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-        font-weight: bold;
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <div class="section" style="background-color: #f8f8f8;">
-    <h1>Contact us</h1>
+  <div class="section">
+    <h1>Contact Us</h1>
+    <hr>
     <p style="font-size: 24px;">Get in touch!</p>
+    
+    <h3>Have questions or feedback?</h3>
+    
+    <div class="form-group">
+      <form action="https://httpbin.org/get" method="get">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" maxlength="100" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="cc">Email Address:</label>
+          <input type="text" id="cc" name="cc" maxlength="100" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="Subject">Subject:</label>
+          <input type="text" id="Subject" name="Subject" maxlength="100" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="body">Your Message:</label>
+          <textarea id="body" name="body" maxlength="150" required>Enter your feedback here...</textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="groceries">How would you rate your experience with our site project? :D</label>
+          <select id="groceries" name="groceries" required>
+            <option value="">-- Please select --</option>
+            <option value="1">Excellent - I'm very happy with this site</option>
+            <option value="2">Good - but I have some feedback</option>
+            <option value="3">Bad - (We recommend you to write a feedback)</option>
+          </select>
+        </div>
+        
+        <input type="hidden" name="email" value="info.pressstart.team@gmail.com">
+        
+        <div class="form-buttons">
+          <input type="submit" value="Send Message">
+          <input type="reset" value="Clear Form">
+        </div>
+      </form>
+    </div>
+    
     <p style="font-size: 20px;">Our E-mail:</p>
-    <p class="email">
+    <div class="email">
       <a href="mailto:info.pressstart.team@gmail.com">info.pressstart.team@gmail.com</a>
-    </p>
+    </div>
+    
     <section>
       <h3>Questions?</h3>
       <p>Contact us to get more information on our project!</p>
-  
-      <button onclick="window.location.href='https://docs.google.com/forms/'">Take action</button>
+      <div class="action-button">
+        <button onclick="window.location.href='https://docs.google.com/forms/'">Click here!</button>
+      </div>
     </section>
   </div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="timeless_games.html">Timeless Games</a>
@@ -93,7 +180,5 @@
     <a href="about_us.html">About Us</a>
     <a href="contact_us.html">Contact Us</a>
   </nav>
-  
-
 </body>
 </html>
