@@ -1,110 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Press Start!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        
-        header {
-            background-image: url('images/Dimmed-MainBG.png');
-            background-size: cover;
-            background-position: center;
-            color: rgb(255, 255, 255);
-            padding: 100px;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Press Start!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        nav {
-            background: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .action-button {
-        text-align: center;
-        margin: 20px 0;
-        }
-        
-        button {
-        background: #444;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 5px;
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-        }
-        
-        hr {
-            border: 1px solid #ddd;
-            margin: 30px 0;
-        }
-        
-    </style>
+  <style>
+    #textBanner {
+      white-space: nowrap;
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      animation: scroll-left 20s linear infinite;
+      z-index: 9999;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Explore the history of video games</h1>
-        <p>Showcasing some of the iconic games, consoles, and the evolution of gaming culture!</p>
-    </header>
-    <nav>
-        <a href="timeless_games.html">Timeless Games</a>
-        <a href="console_legacy.html">Console Legacy</a>
-        <a href="pixels-on-the-go.html">Pixels on the Go</a>
-        <a href="retroEvolve.html">Retro Evolve</a>
-        <a href="game-geniuses.html">Game Geniuses</a>
-        <a href="about_us.html">About Us</a>
-        <a href="contact_us.html">Contact Us</a>
-    </nav>   
-    <main>
-        <h2>Check out our pages!</h2>
-        <hr>
-        <section>
-            <h2>Step Into The World Of Gaming!</h2>
-            <p>This website focuses on the different eras of gaming, additionally featuring visuals and descriptions of retro and modern video game consoles while comparing their differences. It also shows how gaming has influenced and made a significant cultural impact, highlighting examples of games and their developers, some of the biggest names that have shaped the industry.</p>
-          </section>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="images/FullLogo.png" alt="Press Start Logo" style="max-width: 600px;">
+
+  <header class="text-white text-center py-5" style="background-image: url('images/Dimmed-MainBG.png'); background-size: cover; background-position: center;">
+    <div class="container">
+      <h1 class="display-4">Explore the History of Video Games</h1>
+      <p class="lead">Showcasing iconic games, consoles, and gaming culture!</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Press Start</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="timeless_games.html">Timeless Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="console_legacy.html">Console Legacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="pixels-on-the-go.html">Pixels on the Go</a></li>
+          <li class="nav-item"><a class="nav-link" href="retroEvolve.html">Retro Evolve</a></li>
+          <li class="nav-item"><a class="nav-link" href="game-geniuses.html">Game Geniuses</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+
+    <div class="text-center mb-4">
+      <h2>Explore More!</h2>
+      <a href="questionnaire.html" class="btn btn-outline-primary m-2">Questionnaire Page</a>
+      <a href="calculate.html" class="btn btn-outline-success m-2">Calculate Page</a>
+      <a href="funpage.html" class="btn btn-outline-warning m-2">Fun Page</a>
+    </div>
+
+    <div class="mx-auto mb-5" style="max-width: 600px;">
+      <div id="photoGallery" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Pixels on the go/PS Vita.jpg" class="d-block w-100" alt="PS Vita" style="height: 300px; object-fit: cover;">
           </div>
-          <h2> The meaning behind our logo!</h2>
-            <p>The logo embodies a powerful gaming aesthetic with the website name "Press Start" displayed at its center. This phrase immediately shows classic gaming nostalgia, reminiscent of the iconic start screens from vintage arcade machines and consoles.</p>
-            <p>Key design elements include:</p>
-            <ul>
-              <li><strong>The Red Pipe:</strong> An iconic gaming symbol representing secret paths and hidden areas, encouraging player exploration and rewarding curiosity - core values of our platform</li>
-              <li><strong>Handheld Consoles:</strong> Integrated into the design to represent portability and accessibility, honoring their crucial role in making gaming personal and mobile</li>
-            </ul>
-            
-            <p>Together, these elements create a visual identity that celebrates gaming's rich history while embracing its evolving nature.</p>
+          <div class="carousel-item">
+            <img src="images/Console Legacy/Xbox360.png" class="d-block w-100" alt="Xbox 360" style="height: 300px; object-fit: cover;">
           </div>
-            <hr>
-            <h3>Feedback?</h3>
-            <p>Help us make our site better!</p>
-            <div class="action-button">
-              <button onclick="window.location.href='https://forms.gle/rCEGuq8YMmuMNH8X6'">Press Start!</button>
+          <div class="carousel-item">
+            <img src="images/Console Legacy/PS2.png" class="d-block w-100" alt="PlayStation 2" style="height: 300px; object-fit: cover;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoGallery" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoGallery" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center mb-5">
+      <h2>Step Into The World Of Gaming!</h2>
+      <p>This site explores gaming eras, iconic consoles, and gaming's cultural impact.</p>
+    </div>
+
+    <div class="text-center mb-5">
+      <img src="images/FullLogo.png" alt="Press Start Logo" class="img-fluid" style="max-width: 600px;">
+    </div>
+
+    <div class="accordion mb-5" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            What inspired this website?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">A passion for retro and modern gaming history!</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Can I contribute my own stories?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes! Visit the Contact Us page to share your story.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mb-5">
+      <h3>Feedback?</h3>
+      <p>Help us improve our website!</p>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#feedbackModal">Press Start!</button>
+    </div>
+
+    <div class="modal fade" id="feedbackModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form class="needs-validation" novalidate>
+            <div class="modal-header">
+              <h5 class="modal-title">Feedback Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-    </main>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label">Message</label>
+                <textarea class="form-control" id="messageInput" rows="3" required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="textBanner">
+    <span id="bannerText">Welcome to the Press Start website!</span>
+  </div>
+
+  
+  <script>
+    function updateBanner() {
+      const now = new Date();
+      const date = now.toLocaleDateString();
+      const time = now.toLocaleTimeString();
+      document.getElementById('bannerText').textContent =
+        `Welcome to the Press Start website! Today is ${date}, and the time is ${time}`;
+    }
+    updateBanner();
+    setInterval(updateBanner, 1000);
+  </script>
 </body>
 </html>

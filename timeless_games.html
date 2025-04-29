@@ -1,229 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Timeless Games</title>
-    <div style="text-align: center; margin: 20px 0;">
-        <img src="images/SimpleLogo.png" alt="Press Start Logo" style="max-width: 150px;">
-    </div>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .header {
-            background-image: url('images/Timeless Games/TimelessGamesBG.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
-            text-align: center;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-        }
-        
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        
-        .intro {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .games-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        
-        .game-card {
-            background: white;
-            width: 48%;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .game-image {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-            margin-bottom: 10px;
-        }
-        
-        .game-title {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 5px;
-            color: #2c3e50;
-        }
-        
-        .game-year {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-        
-        nav {
-            background: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <title>Timeless Games</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .header {
+      background-image: url('images/Timeless Games/TimelessGamesBG.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    }
+    .game-image {
+      height: 200px;
+      object-fit: contain;
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Timeless Games</h1>
-        <div class="intro">
-            Step into gaming history! This page highlights the iconic and unforgettable games.
-        </div>
+  <div class="text-center my-3">
+    <img src="images/SimpleLogo.png" alt="Press Start Logo" class="img-fluid" style="max-width: 150px;">
+  </div>
+
+  <div class="header text-center">
+    <h1 class="display-4">Timeless Games</h1>
+    <p class="lead">Step into gaming history! This page highlights the iconic and unforgettable games.</p>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Press Start</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="timeless_games.html">Timeless Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="console_legacy.html">Console Legacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="pixels-on-the-go.html">Pixels on the Go</a></li>
+          <li class="nav-item"><a class="nav-link" href="retroEvolve.html">Retro Evolve</a></li>
+          <li class="nav-item"><a class="nav-link" href="game-geniuses.html">Game Geniuses</a></li>
+          <li class="nav-item"><a class="nav-link" href="questionnaire.html">Questionnaire</a></li>
+          <li class="nav-item"><a class="nav-link" href="calculate.html">Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="funpage.html">Fun Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="content">
-        <p>This page explores the incredible history of home console systems, from their humble beginnings to the powerhouse machines of today.</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="timeless_games.html">Timeless Games</a>
-            <a href="console_legacy.html">Console Legacy</a>
-            <a href="pixels-on-the-go.html">Pixels on the Go</a>
-            <a href="retroEvolve.html">Retro Evolve</a>
-            <a href="game-geniuses.html">Game Geniuses</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
-        </nav>
-    <div class="games-container">
-        <div class="game-card">
-            <img src="images/Timeless Games/Pong.jpg" alt="Pong" class="game-image">
-            <div class="game-title">PONG</div>
-            <div class="game-year">1972</div>
-            <p>One of the first computer games ever created, it's a very simple tennis game, yet it's seem that you can get addicted to it!</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Tetris.png" alt="Tetris" class="game-image">
-            <div class="game-title">TETRIS</div>
-            <div class="game-year">1984</div>
-            <p>A timeless puzzle game where players arrange falling blocks to clear lines. Its simple yet addictive gameplay made it a global phenomenon.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Super mario bros.jpeg" alt="Super Mario Bros" class="game-image">
-            <div class="game-title">Super Mario Bros.</div>
-            <div class="game-year">1985</div>
-            <p>It's a platformer developed by Nintendo, it's the first game in the Super Mario series. This game was revolutionary in many ways.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Sonic1.jpg" alt="Sonic" class="game-image">
-            <div class="game-title">Sonic the Hedgehog</div>
-            <div class="game-year">1991</div>
-            <p>It's a platform game developed by Sonic Team, and marks the official debut of Sega's mascot.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/DKC.jpg" alt="Donkey Kong" class="game-image">
-            <div class="game-title">Donkey Kong Country</div>
-            <div class="game-year">1994</div>
-            <p>It's a platform game developed by Rare and published by Nintendo for the Super Nintendo Entertainment System.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Mario64.jpg" alt="Mario 64" class="game-image">
-            <div class="game-title">Super Mario 64</div>
-            <div class="game-year">1996</div>
-            <p>It is a platformer action-adventure game, and it is considered to be one of the most influential titles from the fifth generation of video games.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Mgs1.jpg" alt="Metal Gear" class="game-image">
-            <div class="game-title">Metal Gear Solid</div>
-            <div class="game-year">1998</div>
-            <p>A groundbreaking stealth-action game where players control Solid Snake, a special operative tasked with infiltrating a nuclear weapons facility.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Doom.jpg" alt="Doom" class="game-image">
-            <div class="game-title">Doom</div>
-            <div class="game-year">1993</div>
-            <p>It is a 1993 first-person shooter, it pioneered and popularized the first-person shooter (FPS) genre, setting a standard for FPS games to come.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Halo.jpg" alt="Halo" class="game-image">
-            <div class="game-title">Halo: Combat Evolved</div>
-            <div class="game-year">2001</div>
-            <p>Revolutionized first-person shooters with its immersive sci-fi universe, engaging story, and groundbreaking multiplayer.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Portal.png" alt="Portal" class="game-image">
-            <div class="game-title">Portal</div>
-            <div class="game-year">2007</div>
-            <p>A mind-bending puzzle game that challenges players with its unique portal gun mechanic and darkly humorous story.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/RE4.png" alt="RE4" class="game-image">
-            <div class="game-title">Resident Evil 4</div>
-            <div class="game-year">2005</div>
-            <p>A groundbreaking survival horror game that redefined the genre with its over-the-shoulder camera and intense action.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Bioshock.jpg" alt="Bioshock" class="game-image">
-            <div class="game-title">Bioshock</div>
-            <div class="game-year">2007</div>
-            <p>A masterpiece of storytelling and atmosphere that immerses players in the underwater city of Rapture.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/DS1.jpg" alt="Dark Souls" class="game-image">
-            <div class="game-title">Dark Souls</div>
-            <div class="game-year">2011</div>
-            <p>A brutally challenging action RPG known for its intricate world design, deep lore, and rewarding gameplay.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Minecraft.jpeg" alt="Minecraft" class="game-image">
-            <div class="game-title">Minecraft</div>
-            <div class="game-year">2011</div>
-            <p>A sandbox game that lets players build, explore, and survive in a blocky, procedurally generated world.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Bloodborne.jpg" alt="Bloodborne" class="game-image">
-            <div class="game-title">Bloodborne</div>
-            <div class="game-year">2015</div>
-            <p>A dark and atmospheric action RPG that combines fast-paced combat with gothic horror and intricate storytelling.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Rdr2.png" alt="RDR2" class="game-image">
-            <div class="game-title">Red Dead Redemption 2</div>
-            <div class="game-year">2018</div>
-            <p>An epic open-world western that immerses players in a richly detailed story of outlaws and redemption.</p>
-        </div>
-        
-        <div class="game-card">
-            <img src="images/Timeless Games/Sekiro.jpg" alt="Sekiro" class="game-image">
-            <div class="game-title">Sekiro: Shadows Die Twice</div>
-            <div class="game-year">2019</div>
-            <p>A challenging action-adventure game that blends precise swordplay with stealth and a gripping feudal Japan setting.</p>
-        </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="text-center mb-4">
+      <p class="lead">This page explores the incredible history of home console systems, from their humble beginnings to the powerhouse machines of today.</p>
     </div>
-    <nav>
-        <a href="index.html">Return to Home</a>
-    </nav>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Pong.jpg" class="card-img-top game-image" alt="Pong">
+          <div class="card-body"><h5 class="card-title">PONG <small class="text-muted">(1972)</small></h5>
+            <p class="card-text">One of the first computer games ever created, it's a very simple tennis game, yet it's seem that you can get addicted to it!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Tetris.png" class="card-img-top game-image" alt="Tetris">
+          <div class="card-body"><h5 class="card-title">TETRIS <small class="text-muted">(1984)</small></h5>
+            <p class="card-text">A timeless puzzle game where players arrange falling blocks to clear lines. Its simple yet addictive gameplay made it a global phenomenon.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Super mario bros.jpeg" class="card-img-top game-image" alt="Super Mario Bros">
+          <div class="card-body"><h5 class="card-title">Super Mario Bros. <small class="text-muted">(1985)</small></h5>
+            <p class="card-text">A revolutionary platformer that laid the foundation for modern side-scrolling games and launched Mario into superstardom.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Sonic1.jpg" class="card-img-top game-image" alt="Sonic">
+          <div class="card-body"><h5 class="card-title">Sonic the Hedgehog <small class="text-muted">(1991)</small></h5>
+            <p class="card-text">A high-speed platformer that introduced Sega's iconic blue mascot and defined '90s gaming cool.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/DKC.jpg" class="card-img-top game-image" alt="Donkey Kong">
+          <div class="card-body"><h5 class="card-title">Donkey Kong Country <small class="text-muted">(1994)</small></h5>
+            <p class="card-text">Stunning pre-rendered graphics and tight platforming gameplay made this SNES classic a standout hit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Mario64.jpg" class="card-img-top game-image" alt="Mario 64">
+          <div class="card-body"><h5 class="card-title">Super Mario 64 <small class="text-muted">(1996)</small></h5>
+            <p class="card-text">A genre-defining 3D platformer that set the gold standard for 3D game design.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Mgs1.jpg" class="card-img-top game-image" alt="Metal Gear">
+          <div class="card-body"><h5 class="card-title">Metal Gear Solid <small class="text-muted">(1998)</small></h5>
+            <p class="card-text">A cinematic stealth-action masterpiece that brought mature storytelling to video games.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Doom.jpg" class="card-img-top game-image" alt="Doom">
+          <div class="card-body"><h5 class="card-title">Doom <small class="text-muted">(1993)</small></h5>
+            <p class="card-text">The FPS that popularized the genre and introduced modding and multiplayer to a new generation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Halo.jpg" class="card-img-top game-image" alt="Halo">
+          <div class="card-body"><h5 class="card-title">Halo: Combat Evolved <small class="text-muted">(2001)</small></h5>
+            <p class="card-text">Revolutionized console FPS gaming with tight controls, an epic sci-fi narrative, and LAN multiplayer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Portal.png" class="card-img-top game-image" alt="Portal">
+          <div class="card-body"><h5 class="card-title">Portal <small class="text-muted">(2007)</small></h5>
+            <p class="card-text">A darkly funny and mind-bending puzzle game with the iconic portal gun mechanic.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/RE4.png" class="card-img-top game-image" alt="Resident Evil 4">
+          <div class="card-body"><h5 class="card-title">Resident Evil 4 <small class="text-muted">(2005)</small></h5>
+            <p class="card-text">Redefined the survival horror genre with action-oriented gameplay and over-the-shoulder perspective.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Bioshock.jpg" class="card-img-top game-image" alt="Bioshock">
+          <div class="card-body"><h5 class="card-title">Bioshock <small class="text-muted">(2007)</small></h5>
+            <p class="card-text">A haunting, philosophical shooter that blended immersive storytelling with rich world-building.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/DS1.jpg" class="card-img-top game-image" alt="Dark Souls">
+          <div class="card-body"><h5 class="card-title">Dark Souls <small class="text-muted">(2011)</small></h5>
+            <p class="card-text">A brutally challenging action RPG famous for its deep lore, punishing difficulty, and intricate level design.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Minecraft.jpeg" class="card-img-top game-image" alt="Minecraft">
+          <div class="card-body"><h5 class="card-title">Minecraft <small class="text-muted">(2011)</small></h5>
+            <p class="card-text">An open-world sandbox that became one of the best-selling games of all time through creativity and survival.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Bloodborne.jpg" class="card-img-top game-image" alt="Bloodborne">
+          <div class="card-body"><h5 class="card-title">Bloodborne <small class="text-muted">(2015)</small></h5>
+            <p class="card-text">A Lovecraftian nightmare filled with fast-paced combat, haunting atmosphere, and deep lore.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Rdr2.png" class="card-img-top game-image" alt="Red Dead Redemption 2">
+          <div class="card-body"><h5 class="card-title">Red Dead Redemption 2 <small class="text-muted">(2018)</small></h5>
+            <p class="card-text">An emotionally powerful open-world Western epic with unmatched attention to detail and storytelling.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Timeless Games/Sekiro.jpg" class="card-img-top game-image" alt="Sekiro">
+          <div class="card-body"><h5 class="card-title">Sekiro: Shadows Die Twice <small class="text-muted">(2019)</small></h5>
+            <p class="card-text">A tense and rewarding action-adventure set in a mythic Sengoku Japan, known for its precise swordplay.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn btn-secondary">Return to Home</a>
+    </div>
+  </div>
+
 </body>
 </html>

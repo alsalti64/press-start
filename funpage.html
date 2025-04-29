@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Gaming Term!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <div class="text-center my-3">
+    <img src="images/SimpleLogo.png" alt="Press Start Logo" class="img-fluid" style="max-width: 150px;">
+  </div>
+
+  <div class="bg-dark text-white text-center py-5">
+    <h1 class="display-4">Guess the Gaming Term!</h1>
+    <p class="fst-italic">How well do you know gaming terms?</p>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Press Start</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="timeless_games.html">Timeless Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="console_legacy.html">Console Legacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="pixels-on-the-go.html">Pixels on the Go</a></li>
+          <li class="nav-item"><a class="nav-link" href="retroEvolve.html">Retro Evolve</a></li>
+          <li class="nav-item"><a class="nav-link" href="game-geniuses.html">Game Geniuses</a></li>
+          <li class="nav-item"><a class="nav-link" href="questionnaire.html">Questionnaire</a></li>
+          <li class="nav-item"><a class="nav-link" href="calculate.html">Calculator</a></li>
+          <li class="nav-item"><a class="nav-link active" href="funpage.html">Fun Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <p class="lead text-center">Can you guess the correct gaming term from the scrambled letters?</p>
+    <hr>
+
+    <div class="card p-4 shadow-sm">
+      <div class="card-body text-center">
+        <p id="gameMessage" class="fs-4 fw-bold text-primary">Scrambled Term: </p>
+        <input type="text" id="userGuess" class="form-control mb-3" placeholder="Enter your guess" required>
+        <button id="submitGuess" class="btn btn-primary w-100">Submit Guess</button>
+        <p id="feedbackMessage" class="mt-3"></p>
+        <button id="nextTerm" class="btn btn-secondary w-100 mt-3" style="display:none;">Next Term</button>
+      </div>
+    </div>
+
+    <div class="text-center my-4">
+      <a href="index.html" class="btn btn-secondary">Return to Home</a>
+    </div>
+  </div>
+
+
+  <script>
+  const terms = ["console", "joystick", "pixel", "arcade", "controller", "online", "multiplayer", "gamer"];
+  let currentTerm = "";
+  let scrambledTerm = "";
+
+  function scrambleWord(word) {
+    let scrambled = word.split('').sort(() => Math.random() - 0.5).join('');
+    return scrambled;
+  }
+
+  function startGame() {
+    const randomIndex = Math.floor(Math.random() * terms.length);
+    currentTerm = terms[randomIndex];
+    scrambledTerm = scrambleWord(currentTerm);
+
+    document.getElementById('gameMessage').textContent = "Scrambled Term: " + scrambledTerm;
+    document.getElementById('feedbackMessage').textContent = "";
+    document.getElementById('userGuess').value = "";
+    document.getElementById('submitGuess').style.display = 'inline-block';
+    document.getElementById('nextTerm').style.display = 'none';
+  }
+
+  document.getElementById('submitGuess').addEventListener('click', function() {
+    const userGuess = document.getElementById('userGuess').value.trim().toLowerCase();
+    
+    if (userGuess === currentTerm.toLowerCase()) {
+      document.getElementById('feedbackMessage').textContent = "Correct! 🎉 Well done!";
+      document.getElementById('submitGuess').style.display = 'none';
+      document.getElementById('nextTerm').style.display = 'inline-block';
+    } else {
+      document.getElementById('feedbackMessage').textContent = "Oops! Try again!";
+    }
+  });
+
+  document.getElementById('nextTerm').addEventListener('click', startGame);
+  startGame();
+  </script>
+
+</body>
+</html>

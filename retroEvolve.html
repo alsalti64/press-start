@@ -1,168 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Retro Evolve</title>
-    <div style="text-align: center; margin: 20px 0;">
-        <img src="images/SimpleLogo.png" alt="Press Start Logo" style="max-width: 150px;">
-    </div>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            line-height: 1.6;
-        }
-
-        .header {
-            background-image: url('images/retroEvolve-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
-            text-align: center;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-        }
-        
-        h1 {
-            text-align: center;
-            color: white;
-            margin-bottom: 10px;
-        }
-        
-        .intro {
-            text-align: center;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-        
-        .eras-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        
-        .era-card {
-            background: white;
-            width: 100%;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        
-        .era-title {
-            font-size: 24px;
-            color: #2c3e50;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
-        
-        .era-period {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-        
-        .highlight {
-            font-weight: bold;
-            color: #0066cc;
-        }
-        nav {
-            background: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Retro Evolve</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="header">  
-    <h1>Retro Evolve</h1>
-    
-    <div class="intro">
-        Explore the evolution and different eras of gaming!
+
+  <div class="text-center my-3">
+    <img src="images/SimpleLogo.png" alt="Press Start Logo" class="img-fluid" style="max-width: 150px;">
+  </div>
+
+  <div class="bg-dark text-white text-center py-5" style="background-image: url('images/retroEvolve-bg.jpg'); background-size: cover; background-position: center;">
+    <h1 class="display-4">Retro Evolve</h1>
+    <p class="fst-italic">Explore the evolution and different eras of gaming!</p>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Press Start</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="timeless_games.html">Timeless Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="console_legacy.html">Console Legacy</a></li>
+        <li class="nav-item"><a class="nav-link" href="pixels-on-the-go.html">Pixels on the Go</a></li>
+        <li class="nav-item"><a class="nav-link active" href="retroEvolve.html">Retro Evolve</a></li>
+        <li class="nav-item"><a class="nav-link" href="game-geniuses.html">Game Geniuses</a></li>
+        <li class="nav-item"><a class="nav-link" href="questionnaire.html">Questionnaire</a></li>
+        <li class="nav-item"><a class="nav-link" href="calculate.html">Calculator</a></li>
+        <li class="nav-item"><a class="nav-link" href="funpage.html">Fun Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+      </ul>
     </div>
-    
-    <div class="intro">
-        This page talks about different eras of gaming, from the 90s to the modern era.
-    </div>
-</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="timeless_games.html">Timeless Games</a>
-        <a href="console_legacy.html">Console Legacy</a>
-        <a href="pixels-on-the-go.html">Pixels on the Go</a>
-        <a href="retroEvolve.html">Retro Evolve</a>
-        <a href="game-geniuses.html">Game Geniuses</a>
-        <a href="about_us.html">About Us</a>
-        <a href="contact_us.html">Contact Us</a>
-    </nav>
-    
-    <div class="eras-container">
-        <div class="era-card">
-            <h2 class="era-title">The 1990s Era</h2>
-            <div class="era-period">1990-1999</div>
-            <p>The 90s saw the transition from 2D to 3D gaming, with <span class="highlight">iconic consoles</span> like the Super Nintendo, PlayStation, and Nintendo 64. This era introduced:</p>
+  </div>
+</nav>
+
+  <div class="container my-4">
+    <p class="lead text-center">This page talks about different eras of gaming, from the 90s to the modern era.</p>
+    <hr>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">The 1990s Era</h5>
+            <h6 class="text-muted">1990–1999</h6>
+            <p>The 90s saw the transition from 2D to 3D gaming, with iconic consoles like the Super Nintendo, PlayStation, and Nintendo 64. This era introduced:</p>
             <ul>
-                <li>First mainstream 3D graphics</li>
-                <li>Birth of famous franchises (Mario 64, Final Fantasy VII)</li>
-                <li>Arcade culture at its peak</li>
-                <li>Introduction of CD-ROM technology</li>
+              <li>First mainstream 3D graphics</li>
+              <li>Birth of famous franchises (Mario 64, Final Fantasy VII)</li>
+              <li>Arcade culture at its peak</li>
+              <li>Introduction of CD-ROM technology</li>
             </ul>
             <p>This decade established many gameplay conventions we still see today.</p>
+          </div>
         </div>
-        
-        <div class="era-card">
-            <h2 class="era-title">The 2000s Era</h2>
-            <div class="era-period">2000-2009</div>
-            <p>The 2000s brought <span class="highlight">online gaming</span> to the mainstream and HD graphics with consoles like Xbox 360 and PS3. Key developments:</p>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">The 2000s Era</h5>
+            <h6 class="text-muted">2000–2009</h6>
+            <p>The 2000s brought online gaming to the mainstream and HD graphics with consoles like Xbox 360 and PS3. Key developments:</p>
             <ul>
-                <li>Xbox Live revolutionized online multiplayer</li>
-                <li>Motion controls (Wii) changed how we play</li>
-                <li>Handheld gaming flourished (Nintendo DS, PSP)</li>
-                <li>Open-world games became popular</li>
+              <li>Xbox Live revolutionized online multiplayer</li>
+              <li>Motion controls (Wii) changed how we play</li>
+              <li>Handheld gaming flourished (Nintendo DS, PSP)</li>
+              <li>Open-world games became popular</li>
             </ul>
             <p>This era saw gaming become a dominant entertainment medium.</p>
+          </div>
         </div>
-        
-        <div class="era-card">
-            <h2 class="era-title">The 2010s Era</h2>
-            <div class="era-period">2010-2019</div>
-            <p>The 2010s were about <span class="highlight">connectivity and immersion</span> with PS4, Xbox One, and Nintendo Switch. Notable trends:</p>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">The 2010s Era</h5>
+            <h6 class="text-muted">2010–2019</h6>
+            <p>The 2010s were about connectivity and immersion with PS4, Xbox One, and Nintendo Switch. Notable trends:</p>
             <ul>
-                <li>Digital distribution became standard</li>
-                <li>Esports grew into a billion-dollar industry</li>
-                <li>Virtual Reality made consumer breakthroughs</li>
-                <li>Indie games gained mainstream success</li>
+              <li>Digital distribution became standard</li>
+              <li>Esports grew into a billion-dollar industry</li>
+              <li>Virtual Reality made consumer breakthroughs</li>
+              <li>Indie games gained mainstream success</li>
             </ul>
             <p>Gaming became more social and accessible than ever before.</p>
+          </div>
         </div>
-        
-        <div class="era-card">
-            <h2 class="era-title">The Modern Era</h2>
-            <div class="era-period">2020-Present</div>
-            <p>Today's gaming features <span class="highlight">cutting-edge technology</span> with PS5, Xbox Series X, and cloud gaming. Current highlights:</p>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">The Modern Era</h5>
+            <h6 class="text-muted">2020–Present</h6>
+            <p>Today's gaming features cutting-edge technology with PS5, Xbox Series X, and cloud gaming. Current highlights:</p>
             <ul>
-                <li>Ray tracing and 4K/8K graphics</li>
-                <li>Cloud gaming services (Game Pass, GeForce Now)</li>
-                <li>Cross-platform play becoming standard</li>
-                <li>Handheld PCs (Steam Deck) gaining popularity</li>
+              <li>Ray tracing and 4K/8K graphics</li>
+              <li>Cloud gaming services (Game Pass, GeForce Now)</li>
+              <li>Cross-platform play becoming standard</li>
+              <li>Handheld PCs (Steam Deck) gaining popularity</li>
             </ul>
             <p>We're seeing the lines between console, PC, and mobile gaming blur.</p>
+          </div>
         </div>
+      </div>
+
     </div>
-    <nav>
-        <a href="index.html">Return to Home</a>
-    </nav>
+
+    <div class="text-center my-4">
+      <a href="index.html" class="btn btn-secondary">Return to Home</a>
+    </div>
+  </div>
+  
 </body>
 </html>
