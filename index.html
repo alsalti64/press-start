@@ -164,6 +164,7 @@
 
   
   <script>
+     // showss the date and time in the banner
     function updateBanner() {
       const now = new Date();
       const date = now.toLocaleDateString();
@@ -172,6 +173,7 @@
         `Welcome to the Press Start website! Today is ${date}, and the time is ${time}`;
     }
     updateBanner();
+    // Update every second
     setInterval(updateBanner, 1000);
   </script>
 </body>

@@ -106,12 +106,14 @@
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 Press Start. All Rights Reserved.</p>
   </footer>
-  
+
   <script>
+    // after submitting the form
     document.getElementById('questionnaireForm').addEventListener('submit', function(event) {
       let form = this;
       let consoleSelected = document.querySelector('input[name="console"]:checked');
       let valid = form.checkValidity();
+      // show an error if console is not selected
       if (!consoleSelected) {
         document.getElementById('consoleError').style.display = 'block';
         valid = false;

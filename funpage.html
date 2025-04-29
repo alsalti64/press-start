@@ -68,7 +68,7 @@
   const terms = ["console", "joystick", "pixel", "arcade", "controller", "online", "multiplayer", "gamer"];
   let currentTerm = "";
   let scrambledTerm = "";
-
+    // shuffle the letters in a word !!
   function scrambleWord(word) {
     let scrambled = word.split('').sort(() => Math.random() - 0.5).join('');
     return scrambled;
