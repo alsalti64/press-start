@@ -36,7 +36,7 @@ The website structure remained consistent with the original plan. Key improvemen
 - Enhanced contact form functionality
 
 ## Technical Implementation
-- We are currently using HTML and CSS
+- We are currently using HTML and Bootstrap and JavaScript
 - Responsive design works on all devices (Hopefully) :D
 - Clear folder structure for assets
 
