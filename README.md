@@ -2,7 +2,8 @@
 
 <div class="highlight">
   <strong>Project Name:</strong> Press Start Gaming History Website<br>
-  <strong>Developers:</strong> Omar Al Salti and Abdul Wahab Al Sarhani
+  <strong>Developers:</strong>- Omar Al Salti
+                              - Abdul Wahab Al Sarhani
   <br><strong>Hosted Website link:</strong> https://press-start-azure.vercel.app
   <br><strong>GitHub Pages link:</strong> https://alsalti64.github.io/press-start/
 </div>
