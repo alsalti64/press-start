@@ -9,7 +9,7 @@ INSERT INTO consoles (name, release_year, manufacturer) VALUES
 --data for games
 INSERT INTO games (title, genre, release_year) VALUES
 ('The Legend of Zelda: Breath of the Wild', 'Adventure', 2017),
-('God of War', 'Action', 2018),
+('Red Dead Redemption 2', 'Open-World', 2018),
 ('Minecraft', 'Sandbox', 2011),
 ('Super Mario 64', 'Platformer', 1996),
 ('Tetris', 'Puzzle', 1984);
