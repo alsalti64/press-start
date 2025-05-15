@@ -46,7 +46,7 @@
   <div class="container my-5">
     <h2 class="text-center mb-4">Your Gaming Thoughts!</h2>
 
-    <form id="questionnaireForm" class="form-section needs-validation" novalidate>
+    <form id="questionnaireForm" class="form-section needs-validation" action="submit_questionnaire.php" method="post" novalidate>
       
       <div class="mb-3">
         <label for="favoriteGame" class="form-label">Your Favorite Game:</label>
@@ -129,6 +129,62 @@
       form.classList.add('was-validated');
     });
   </script>
+<script>
+  document.getElementById('questionnaireForm').addEventListener('submit', function(event) {
+    let form = this;
+    let valid = true;
+
+    // for reset all error states
+    form.classList.remove('was-validated');
+    document.getElementById('consoleError').style.display = 'none';
+
+    // validate favorite Game
+    let favoriteGame = document.getElementById('favoriteGame');
+    let gameRegex = /^[A-Za-z0-9\s]{3,}$/;
+    if (!gameRegex.test(favoriteGame.value)) {
+      favoriteGame.classList.add('is-invalid');
+      valid = false;
+    } else {
+      favoriteGame.classList.remove('is-invalid');
+      favoriteGame.classList.add('is-valid');
+    }
+
+    // validate favorite Developer
+    let favoriteDeveloper = document.getElementById('favoriteDeveloper');
+    let devRegex = /^[A-Za-z\s]{3,}$/;
+    if (!devRegex.test(favoriteDeveloper.value)) {
+      favoriteDeveloper.classList.add('is-invalid');
+      valid = false;
+    } else {
+      favoriteDeveloper.classList.remove('is-invalid');
+      favoriteDeveloper.classList.add('is-valid');
+    }
+
+    // validate console
+    let consoleSelected = document.querySelector('input[name="console"]:checked');
+    if (!consoleSelected) {
+      document.getElementById('consoleError').style.display = 'block';
+      valid = false;
+    }
+
+    // validate message
+    let message = document.getElementById('message');
+    if (message.value.trim().length < 10) {
+      message.classList.add('is-invalid');
+      valid = false;
+    } else {
+      message.classList.remove('is-invalid');
+      message.classList.add('is-valid');
+    }
+
+    if (!valid) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    form.classList.add('was-validated');
+  });
+</script>
 
 </body>
 </html>
