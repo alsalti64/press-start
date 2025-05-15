@@ -3,8 +3,8 @@
 <div class="highlight">
   <strong>Project Name:</strong> Press Start Gaming History Website<br>
   <strong>Developers:</strong> Omar Al Salti and Abdul Wahab Al Sarhani
-  <br><Strong> Hosted Website link: https://press-start-azure.vercel.app</Strong>
-  <br><Strong> Gihub pages link: https://alsalti64.github.io/press-start/</Strong>
+  <br><strong>Hosted Website link:</strong> https://press-start-azure.vercel.app
+  <br><strong>GitHub Pages link:</strong> https://alsalti64.github.io/press-start/
 </div>
 
 ## Website Overview
@@ -28,20 +28,23 @@ The site is organized into the following main sections:
 - **Game Geniuses:** Profiles of famous developers
 - **About Us:** Project information
 - **Contact:** User feedback form
-
-## Sitemap Updates
-
-The website structure remained consistent with the original plan. Key improvements include:
-
-- Standardized navigation across all pages
-- Organized image assets in dedicated folders
-- Enhanced contact form functionality
+- **Calculate:** Calculate the total cost of your favorite console purchase!
+- **Questionnaire:** Share Your Gaming Thoughts!
+- **Fun Page:** Guess the Gaming Term!
 
 ## Technical Implementation
-- We are currently using HTML and Bootstrap and JavaScript
-- Responsive design works on all devices (Hopefully) :D
-- Clear folder structure for assets
+- HTML5, Bootstrap 5, and JavaScript
+- Responsive design for all devices (Hopefully T_T)
+- Form validation with JavaScript 
+- PHP server-side processing (May not work well T^T)
+- MySQL database with 3 tables: (May not work well T^T)
+  - Games
+  - Consoles
+  - Developers
+- Database operations
+- Form data validation before submission
+- Database integration
+- Search functionality (May not work well T^T)
 
 ## Conclusion
-
-The Press Start website successfully delivers gaming history content in an accessible, visually appealing format. The project maintains a nostalgic aesthetic while providing educational value about video game evolution. :)!!
+The Press Start website now delivers a brief and nice gaming history experience with both frontend presentation ;) and backend functionality!!. The project maintains its nostalgic aesthetic while adding robust technical capabilities for data management (T^T) and user interaction. :D!!
